@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata schemaVersion="2">
+    <id>Sweetness</id>
+    <version>0.0.1</version>
+    <title>Sweetness</title>
+    <authors>Matthew Strickland, Rob Conery</authors>
+    <owners>Matthew Strickland, Rob Conery</owners>
+    <licenseUrl>https://github.com/mps/Sweetness/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mps/Sweetness</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extension methods for .NET projects</description>
+    <summary />
+    <language>en-US</language>
+    <tags>sugar extension sweetness Sweetness</tags>
+  </metadata>
+
+  <files>
+    <file src="Sweetness\bin\Release\Sweetness.dll" target="lib\net40"/>
+  </files>
+</package>
