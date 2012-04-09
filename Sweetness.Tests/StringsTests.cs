@@ -5,7 +5,7 @@ using Shouldly;
 namespace Sweetness.Tests
 {
     [TestFixture]
-    public class StringTests
+    public class StringsTests
     {
         [Test]
         public void Test_ToDateTime()
