@@ -16,5 +16,15 @@ namespace Sweetness
 
             return date;
         }
+
+        public static bool Matches(this string source, string comparison)
+        {
+            return string.Equals(source, comparison, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public static bool MatchesWithTrimming(this string source, string comparison)
+        {
+            return string.Equals(source.Trim(), comparison.Trim(), StringComparison.OrdinalIgnoreCase);
+        }
     }
 }
