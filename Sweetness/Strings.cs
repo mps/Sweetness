@@ -117,9 +117,9 @@ namespace Sweetness
             return number == 1 ? sourceString.MakeSingular() : sourceString.MakePlural();
         }
 
-        public static string Singularize(this string sourceString, int? number = null)
+        public static string Singularize(this string sourceString)
         {
-            return number == 1 ? sourceString.MakeSingular() : sourceString.MakePlural();
+            return sourceString.MakeSingular();
         }
     }
 }

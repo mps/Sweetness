@@ -31,5 +31,12 @@ namespace Sweetness.Tests
             "goose".Pluralize(1).ShouldBe("goose");
             "geese".Pluralize(1).ShouldBe("goose");
         }
+
+        [Test]
+        public void Test_Singularize()
+        {
+            "goose".Singularize().ShouldBe("goose");
+            "geese".Singularize().ShouldBe("goose");
+        }
     }
 }
