@@ -101,5 +101,25 @@ namespace Sweetness
         {
             return Regex.IsMatch(source, RegexPatterns.STRONG_PASSWORD);
         }
+
+        public static string PluralToSingular(this string sourceString)
+        {
+            return sourceString.MakeSingular();
+        }
+
+        public static string SingularToPlural(this string sourceString)
+        {
+            return sourceString.MakePlural();
+        }
+
+        public static string Pluralize(this string sourceString, int? number = null)
+        {
+            return number == 1 ? sourceString.MakeSingular() : sourceString.MakePlural();
+        }
+
+        public static string Singularize(this string sourceString, int? number = null)
+        {
+            return number == 1 ? sourceString.MakeSingular() : sourceString.MakePlural();
+        }
     }
 }

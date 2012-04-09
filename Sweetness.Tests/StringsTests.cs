@@ -23,5 +23,13 @@ namespace Sweetness.Tests
             "string".MatchesWithTrimming("String ").ShouldBe(true);
             "123123adsfasdf   ".ToUpper().MatchesWithTrimming("123123adsfasdf").ShouldBe(true);
         }
+
+        [Test]
+        public void Test_Pluralize()
+        {
+            "goose".Pluralize().ShouldBe("geese");
+            "goose".Pluralize(1).ShouldBe("goose");
+            "geese".Pluralize(1).ShouldBe("goose");
+        }
     }
 }
